@@ -116,7 +116,7 @@ myStartupHook = do
           setWMName "compton"
 
 ------------------------------------------------------------------------
---- SET KEYS
+--- SET KEYS - TO FIND KEYI DENTIFIERS: XEV 
 ------------------------------------------------------------------------
 myKeys =
     -- Xmonad (Mod + Control/Shift + Key)
@@ -197,19 +197,10 @@ myKeys =
     --- Dmenu (ALT+STRG+Key)
         , ("M-S-<Return>", spawn "dmenu_run -fn 'ShareTechMono-Regular:size=10' -nb '#282828' -nf '#458588' -sb '#458588' -sf '#282828' -p 'CMD:'")
 
-    -- Multimedia Keys
-        , ("<XF86AudioPlay>", spawn "cmus toggle")
-        , ("<XF86AudioPrev>", spawn "cmus prev")
-        , ("<XF86AudioNext>", spawn "cmus next")
-        -- , ("<XF86AudioMute>",   spawn "amixer set Master toggle")  -- Bug prevents it from toggling correctly in 12.04.
-        , ("<XF86AudioLowerVolume>", spawn "amixer set Master 5%- unmute")
-        , ("<XF86AudioRaiseVolume>", spawn "amixer set Master 5%+ unmute")
-        , ("<XF86HomePage>", spawn "firefox")
-        , ("<XF86Search>", safeSpawn "firefox" ["https://www.google.com/"])
-        , ("<XF86Mail>", runOrRaise "geary" (resource =? "thunderbird"))
-        , ("<XF86Calculator>", runOrRaise "gcalctool" (resource =? "gcalctool"))
-        , ("<XF86Eject>", spawn "toggleeject")
-        , ("<Print>", spawn "scrotd 0")
+    -- Screenbrightness
+    	
+	, ("XF86ManBrightnessUp", spawn "xbacklight -s 100")
+	, ("XF86MonBrightnessDown", spawn "xbacklight -s 80")
         ] where nonNSP          = WSIs (return (\ws -> W.tag ws /= "nsp"))
                 nonEmptyNonNSP  = WSIs (return (\ws -> isJust (W.stack ws) && W.tag ws /= "nsp"))
                 
