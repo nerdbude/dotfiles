@@ -1,6 +1,7 @@
 # .dotfiles
 
-<img src="https://github.com/nerdbude/dotfiles/blob/master/screenshot.png">
+<img src="https://github.com/nerdbude/dotfiles/blob/master/xmonad.jpg">
 
 Here are the dotfiles and configs I use at my ThinkPad T470 runnung Debian 10 with XMonad as WM.
+The colorscheme is my own (iwtb). If you like the scheme feel free to port it to your favorite tool and contribute it to this repository.
 
