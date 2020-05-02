@@ -2,8 +2,8 @@
 --
 Config { font    = "xft:ShareTechMono-Regular:pixelsize=12:antialias=true:hinting=true"
        , additionalFonts = [ "xft:ShareTechMono-Regular:pixelsize=12" ]
-       , bgColor = "#282828"
-       , fgColor = "#ebdbb2"
+       , bgColor = "#444444"
+       , fgColor = "#d9d9d9"
        , position = Top
        , lowerOnStart = True
        , hideOnStart = False
@@ -19,5 +19,5 @@ Config { font    = "xft:ShareTechMono-Regular:pixelsize=12:antialias=true:hintin
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " <icon=haskell_20.xpm/> <fc=#666666>|</fc> %UnsafeStdinReader% }{ <fc=#d79921>%cpu%</fc> <fc=#cc241d>%memory%</fc> <fc=#458588>%disku%</fc> <fc=#689d6a>%date%</fc> "
+       , template = " <icon=haskell_20.xpm/> <fc=#d9d9d9>|</fc> %UnsafeStdinReader% }{ <fc=#dbb874>%cpu%</fc> <fc=#dd7676>%memory%</fc> <fc=#71a5d2>%disku%</fc> <fc=#b5bd65>%date%</fc> "
        }
