@@ -1,7 +1,7 @@
 -- XMobar config
 --
-Config { font    = "xft:ShareTechMono-Regular:pixelsize=12:antialias=true:hinting=true"
-       , additionalFonts = [ "xft:ShareTechMono-Regular:pixelsize=12" ]
+Config { font    = "xft:Hack:pixelsize=10:antialias=true:hinting=true"
+       , additionalFonts = [ "xft:Hack:pixelsize=10" ]
        , bgColor = "#444444"
        , fgColor = "#d9d9d9"
        , position = Top

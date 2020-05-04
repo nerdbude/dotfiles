@@ -53,4 +53,4 @@ URxvt.savelines: 100000
 URxvt.cursorBlink: true
 
 #Font
-URxvt.font: xft:Share Tech Mono:style=Regular:pixelsize=12
+URxvt.font: xft:Hack:style=Regular:pixelsize=10
