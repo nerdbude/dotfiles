@@ -195,7 +195,7 @@ myKeys =
         , ("M-<Return>", spawn myTerminal) 
 		
     --- Dmenu (ALT+STRG+Key)
-        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=10' -nb '#444444' -nf '#71a5d2' -sb '#71a5d2' -sf '#444444' -p 'CMD:'")
+        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#444444' -nf '#71a5d2' -sb '#71a5d2' -sf '#444444' -p 'CMD:'")
 
     -- Screenbrightness
     	
