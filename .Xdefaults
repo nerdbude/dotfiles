@@ -1,5 +1,5 @@
 ## [COLORSCHEME]
-## [IWTB] 
+## [IWTB_DARK] 
 ## [ORIGINAL: https://www.github.com/nerdbude/]
 
 # special
@@ -16,16 +16,16 @@
 *.color9: #ff5f87
 
 # green
-*.color2: #afd75f
-*.color10: #5fd75f
+*.color2: #5fd75f
+*.color10: #afd75f
 
 # yellow
 *.color3: #afaf00
 *.color11: #ffff5f
 
 # blue
-*.color4: #87afd7
-*.color12: #8787ff
+*.color4: #8787ff
+*.color12: #87afd7
 
 # magenta
 *.color5: #875faf

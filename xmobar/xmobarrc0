@@ -19,5 +19,5 @@ Config { font    = "xft:Hack:pixelsize=10:antialias=true:hinting=true"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " <icon=haskell_20.xpm/> <fc=#d7d7d7>|</fc> %UnsafeStdinReader% }{ <fc=#ffff5f>%cpu%</fc> <fc=#ff5f87>%memory%</fc> <fc=#8787ff>%disku%</fc> <fc=#5fd75f>%date%</fc> "
+       , template = " <icon=haskell_20.xpm/> <fc=#d7d7d7>|</fc> %UnsafeStdinReader% }{ <fc=#ffff5f>%cpu%</fc> <fc=#ff5f87>%memory%</fc> <fc=#87afd7>%disku%</fc> <fc=#afd75f>%date%</fc> "
        }

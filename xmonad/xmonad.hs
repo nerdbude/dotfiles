@@ -88,8 +88,8 @@ main = do
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = \x -> hPutStrLn xmproc0 x -- >> hPutStrLn xmproc1 x  >> hPutStrLn xmproc2 x
                         , ppCurrent = xmobarColor "#84b3ad" "" . wrap "[" "]" -- Current workspace in xmobar
-                        , ppVisible = xmobarColor "#afaf00" ""                -- Visible but not current workspace
-                        , ppHidden = xmobarColor "#ff5f87" "" . wrap "*" ""   -- Hidden workspaces in xmobar
+                        , ppVisible = xmobarColor "#ffff5f" ""                -- Visible but not current workspace
+                        , ppHidden = xmobarColor "#ff5f5f" "" . wrap "*" ""   -- Hidden workspaces in xmobar
                         , ppHiddenNoWindows = xmobarColor "#ff5f87" ""        -- Hidden workspaces (no windows)
                         , ppTitle = xmobarColor "#d0d0d0" "" . shorten 80     -- Title of active window in xmobar
                         , ppSep =  "<fc=#666666> | </fc>"                     -- Separators
@@ -104,7 +104,7 @@ main = do
         , workspaces         = myWorkspaces
         , borderWidth        = myBorderWidth
         , normalBorderColor  = "#818181"
-        , focusedBorderColor = "#00ffd7"
+        , focusedBorderColor = "#00d7d7"
         } `additionalKeysP`         myKeys 
 
 ------------------------------------------------------------------------
