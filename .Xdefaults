@@ -3,41 +3,41 @@
 ## [ORIGINAL: https://www.github.com/nerdbude/]
 
 # special
-*.foreground: #d9d9d9
+*.foreground: #d7d7d7
 *.background: #444444
-*.cursorColor: #d9d9d9
+*.cursorColor: #d7d7d7
 
 # black and gray
-*.color0: #3f3f3f
-*.color8: #8181818
+*.color0: #3a3a3a
+*.color8: #8a8a8a
 
 # red
-*.color1: #b04949
-*.color9: #dd7676
+*.color1: #ff5f5f
+*.color9: #ff5f87
 
 # green
-*.color2: #a5ad52
-*.color10: #b5bd65
+*.color2: #afd75f
+*.color10: #5fd75f
 
 # yellow
-*.color3: #e08d53
-*.color11: #dbb874
+*.color3: #afaf00
+*.color11: #ffff5f
 
 # blue
-*.color4: #6f9abe
-*.color12: #71a5d2
+*.color4: #87afd7
+*.color12: #8787ff
 
 # magenta
-*.color5: #9660a8
-*.color13: #a479b1
+*.color5: #875faf
+*.color13: #875fff
 
 # cyan
-*.color6: #52aca0
-*.color14: #84b3ad
+*.color6: #00d7d7
+*.color14: #00ffd7
 
 # white
-*.color7: #818c97
-*.color15: #bdbdbd
+*.color7: #8a8a8a
+*.color15: #bcbcbc
 
 
 ##[URXVT CONFIG]

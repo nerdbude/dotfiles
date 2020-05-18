@@ -3,7 +3,7 @@
 Config { font    = "xft:Hack:pixelsize=10:antialias=true:hinting=true"
        , additionalFonts = [ "xft:Hack:pixelsize=10" ]
        , bgColor = "#444444"
-       , fgColor = "#d9d9d9"
+       , fgColor = "#d7d7d7"
        , position = Top
        , lowerOnStart = True
        , hideOnStart = False
@@ -19,5 +19,5 @@ Config { font    = "xft:Hack:pixelsize=10:antialias=true:hinting=true"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " <icon=haskell_20.xpm/> <fc=#d9d9d9>|</fc> %UnsafeStdinReader% }{ <fc=#dbb874>%cpu%</fc> <fc=#dd7676>%memory%</fc> <fc=#71a5d2>%disku%</fc> <fc=#b5bd65>%date%</fc> "
+       , template = " <icon=haskell_20.xpm/> <fc=#d7d7d7>|</fc> %UnsafeStdinReader% }{ <fc=#ffff5f>%cpu%</fc> <fc=#ff5f87>%memory%</fc> <fc=#8787ff>%disku%</fc> <fc=#5fd75f>%date%</fc> "
        }
