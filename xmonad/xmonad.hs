@@ -199,8 +199,8 @@ myKeys =
 
     -- Screenbrightness
     	
-	, ("<xF86MonBrightnessUp>", spawn "xbacklight -set 100")
-	, ("<xF86MonBrightnessDown>", spawn "xbacklight -set 80")
+	, ("<xF86MonBrightnessUp>", spawn "xbacklight +100")
+	, ("<xF86MonBrightnessDown>", spawn "xbacklight -20")
         ] where nonNSP          = WSIs (return (\ws -> W.tag ws /= "nsp"))
                 nonEmptyNonNSP  = WSIs (return (\ws -> isJust (W.stack ws) && W.tag ws /= "nsp"))
                 
