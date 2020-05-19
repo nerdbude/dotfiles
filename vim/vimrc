@@ -1,6 +1,6 @@
 set number		"linenumbers from the start
 set history=100		"history is 100 entries
-colo slate		"iwtb soon
+colo iwtb_dark		
 
 filetype plugin indent on
 
@@ -19,7 +19,7 @@ set laststatus=2
 "config lightline plugin (iwtb soon)
 
 let g:lightline = {
-	\ 'colorscheme': 'wombat',
+	\ 'colorscheme': 'seoul256',
 	\ }
 
 "
