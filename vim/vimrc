@@ -43,4 +43,4 @@ let g:startify_lists = [
 \ { 'type': 'dir',	'header': ['    files in folder '. getcwd()]},
 \ ]
 
-let g:startify_bookmarks = [ {'v': '~/.vim/vimrc'}, {'x': '~/.xmonad/xmonad.hs'}, {'b': '~/.config/xmobar/xmobarrc0'}]
+let g:startify_bookmarks = [ {'v': '~/.vim/vimrc'}, {'x': '~/.xmonad/xmonad.hs'}, {'b': '~/.config/xmobar/xmobarrc0'}, {'t': '~/CODE/tdr/'}]
