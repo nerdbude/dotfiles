@@ -1,5 +1,5 @@
 /* XPM */
-static char * haskell_20_xpm[] = {
+static char * spaceinvader_xpm[] = {
 "20 20 2 1",
 " 	c None",
 ".	c #afd75f",
@@ -22,4 +22,7 @@ static char * haskell_20_xpm[] = {
 "     ....  ....     ",
 "                    ",
 "                    ",
-"                    "};
+"                    ",
+"XPMEXT author PHØ   ",
+"mailto:post@nerdbude.com",
+"XPMENDEXT"};
