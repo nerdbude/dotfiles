@@ -1,0 +1,28 @@
+xlogin*login.translations: #override \
+	Ctrl<Key>R: abort-display()\n\
+	<Key>Delete: delete-character()\n\
+	<Key>Left: move-backward-character()\n\
+	<Key>Right: move-forward-character()\n\
+	Ctrl<Key>KP_Enter: set-session-argument(failsafe) finish-field()\n\
+	<Key>KP_Enter: set-session-argument() finish-field()\n\
+	Ctrl<Key>Return: set-session-argument(failsafe) finish-field()\n\
+	<Key>Return: set-session-argument() finish-field()
+
+
+xlogin.Login.greeting:
+xlogin.Login.unsecureGreeting:
+xlogin.Login.fail:                -- permission denied --
+xlogin.Login.changePasswdMessage: Change.
+xlogin.Login.namePrompt:          User:
+xlogin.Login.passwdPrompt:        Password:
+xlogin.Login.echoPasswd:          true
+xlogin.Login.background:          black
+xlogin.Login.foreground:          #afd75f
+xlogin.Login.failColor:           #cccccc
+xlogin.Login.inpColor:            black
+xlogin.Login.promptColor:         #aaaaaa
+xlogin.Login.face:                courier:size=10:style=Normal
+xlogin.Login.failFace:            courier:size=10:style=Normal
+xlogin.Login.promptFace:          courier:size=10:style=Normal
+xlogin.Login.greetFace:           courier:size=10
+xlogin.Login.width:               400 
