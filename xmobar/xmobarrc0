@@ -2,7 +2,7 @@
 --
 Config { font    = "xft:Hack:pixelsize=10:antialias=true:hinting=true"
        , additionalFonts = [ "xft:Hack:pixelsize=10" ]
-       , bgColor = "#444444"
+       , bgColor = "#000000"
        , fgColor = "#afd75f"
        , position = Top
        , lowerOnStart = True
