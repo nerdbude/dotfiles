@@ -194,8 +194,8 @@ myKeys =
     -- Open Terminal (Mod+Enter)
         , ("M-<Return>", spawn myTerminal) 
 		
-    --- Dmenu (ALT+STRG+Key)
-        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#444444' -nf '#71a5d2' -sb '#71a5d2' -sf '#444444' -p 'CMD:'")
+    --- Dmenu (Shift+Mod+Key)
+        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#000000' -nf '#afd75f' -sb '#afd75f' -sf '#000000' -p 'CMD:'")
 
     -- Screenbrightness
     	
