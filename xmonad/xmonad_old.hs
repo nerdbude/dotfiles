@@ -79,7 +79,7 @@ windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.works
 
 main = do
     -- Launching XMobar with config
-    xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc1"
+    xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc0"
     --xmproc1 <- spawnPipe "xmobar -x 1" -- For XMobar on other Displays in Multi-Monitor Setup
     --xmproc2 <- spawnPipe "xmobar -x 2" -- 
 
@@ -87,13 +87,13 @@ main = do
         { manageHook = ( isFullscreen --> doFullFloat ) <+> myManageHook <+> manageHook desktopConfig <+> manageDocks
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = \x -> hPutStrLn xmproc0 x -- >> hPutStrLn xmproc1 x  >> hPutStrLn xmproc2 x
-                        , ppCurrent = xmobarColor "#000000" "" . wrap "[" "]" -- Current workspace in xmobar
-                        , ppVisible = xmobarColor "#000000" ""                -- Visible but not current workspace
-                        , ppHidden = xmobarColor "#000000" "" . wrap "*" ""   -- Hidden workspaces in xmobar
-                        , ppHiddenNoWindows = xmobarColor "#000000" ""        -- Hidden workspaces (no windows)
-                        , ppTitle = xmobarColor "#000000" "" . shorten 80     -- Title of active window in xmobar
-                        , ppSep =  "<fc=#000000> | </fc>"                     -- Separators
-                        , ppUrgent = xmobarColor "#000000" "" . wrap "!" "!"  -- Urgent workspace
+                        , ppCurrent = xmobarColor "#84b3ad" "" . wrap "[" "]" -- Current workspace in xmobar
+                        , ppVisible = xmobarColor "#ffff5f" ""                -- Visible but not current workspace
+                        , ppHidden = xmobarColor "#ff5f5f" "" . wrap "*" ""   -- Hidden workspaces in xmobar
+                        , ppHiddenNoWindows = xmobarColor "#ff5f87" ""        -- Hidden workspaces (no windows)
+                        , ppTitle = xmobarColor "#d0d0d0" "" . shorten 80     -- Title of active window in xmobar
+                        , ppSep =  "<fc=#666666> | </fc>"                     -- Separators
+                        , ppUrgent = xmobarColor "#C45500" "" . wrap "!" "!"  -- Urgent workspace
                         , ppExtras  = [windowCount]                           -- # of windows current workspace
                         , ppOrder  = \(ws:l:t:ex) -> [ws,l]++ex++[t]
                         }
