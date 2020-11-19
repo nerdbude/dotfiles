@@ -70,7 +70,7 @@ import XMonad.Prompt (defaultXPConfig, XPConfig(..), XPPosition(Top), Direction1
 ------------------------------------------------------------------------
 ---CONFIG
 ------------------------------------------------------------------------
-myFont          = "xft:Hack:style=Regular:pixelsize=10"
+myFont          = "xft:ShareTechMono:style=Regular:pixelsize=10"
 myModMask       = mod4Mask  -- Sets modkey to super/windows key
 myTerminal      = "urxvt"   -- Default terminal (urxvt)
 myTextEditor    = "vim"     -- Default text editor (vim)
