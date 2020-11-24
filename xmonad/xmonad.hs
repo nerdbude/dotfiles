@@ -104,7 +104,7 @@ main = do
         , workspaces         = myWorkspaces
         , borderWidth        = myBorderWidth
         , normalBorderColor  = "#818181"
-        , focusedBorderColor = "#afd75f"
+        , focusedBorderColor = "#875fff"
         } `additionalKeysP`         myKeys 
 
 ------------------------------------------------------------------------
@@ -195,7 +195,7 @@ myKeys =
         , ("M-<Return>", spawn myTerminal) 
 		
     --- Dmenu (Shift+Mod+Key)
-        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#000000' -nf '#afd75f' -sb '#afd75f' -sf '#000000' -p 'CMD:'")
+        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#000000' -nf '#875fff' -sb '#875fff' -sf '#000000' -p 'CMD:'")
 
     -- Screenbrightness
     	
