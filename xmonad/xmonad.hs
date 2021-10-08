@@ -70,7 +70,7 @@ import XMonad.Prompt (defaultXPConfig, XPConfig(..), XPPosition(Top), Direction1
 ------------------------------------------------------------------------
 ---CONFIG
 ------------------------------------------------------------------------
-myFont          = "xft:ShareTechMono:style=Regular:pixelsize=10"
+myFont          = "xft:Share Tech Mono:style=Regular:pixelsize=10"
 myModMask       = mod4Mask  -- Sets modkey to super/windows key
 myTerminal      = "urxvt"   -- Default terminal (urxvt)
 myTextEditor    = "vim"     -- Default text editor (vim)
@@ -79,7 +79,7 @@ windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.works
 
 main = do
     -- Launching XMobar with config
-    xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc1"
+    xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc0"
     --xmproc1 <- spawnPipe "xmobar -x 1" -- For XMobar on other Displays in Multi-Monitor Setup
     --xmproc2 <- spawnPipe "xmobar -x 2" -- 
 
@@ -87,12 +87,12 @@ main = do
         { manageHook = ( isFullscreen --> doFullFloat ) <+> myManageHook <+> manageHook desktopConfig <+> manageDocks
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = \x -> hPutStrLn xmproc0 x -- >> hPutStrLn xmproc1 x  >> hPutStrLn xmproc2 x
-                        , ppCurrent = xmobarColor "#000000" "" . wrap "[" "]" -- Current workspace in xmobar
-                        , ppVisible = xmobarColor "#000000" ""                -- Visible but not current workspace
-                        , ppHidden = xmobarColor "#000000" "" . wrap "*" ""   -- Hidden workspaces in xmobar
-                        , ppHiddenNoWindows = xmobarColor "#000000" ""        -- Hidden workspaces (no windows)
-                        , ppTitle = xmobarColor "#000000" "" . shorten 80     -- Title of active window in xmobar
-                        , ppSep =  "<fc=#000000> | </fc>"                     -- Separators
+                        , ppCurrent = xmobarColor "#df20bb" "" . wrap "[" "]" -- Current workspace in xmobar
+                        , ppVisible = xmobarColor "#875fff" ""                -- Visible but not current workspace
+                        , ppHidden = xmobarColor "#875fff" "" . wrap "*" ""   -- Hidden workspaces in xmobar
+                        , ppHiddenNoWindows = xmobarColor "#875fff" ""        -- Hidden workspaces (no windows)
+                        , ppTitle = xmobarColor "#875fff" "" . shorten 80     -- Title of active window in xmobar
+                        , ppSep =  "<fc=#8bd450> >> </fc>"                     -- Separators
                         , ppUrgent = xmobarColor "#000000" "" . wrap "!" "!"  -- Urgent workspace
                         , ppExtras  = [windowCount]                           -- # of windows current workspace
                         , ppOrder  = \(ws:l:t:ex) -> [ws,l]++ex++[t]
@@ -103,7 +103,7 @@ main = do
         , layoutHook         = myLayoutHook 
         , workspaces         = myWorkspaces
         , borderWidth        = myBorderWidth
-        , normalBorderColor  = "#818181"
+        , normalBorderColor  = "#2d2d2d"
         , focusedBorderColor = "#875fff"
         } `additionalKeysP`         myKeys 
 
@@ -195,7 +195,7 @@ myKeys =
         , ("M-<Return>", spawn myTerminal) 
 		
     --- Dmenu (Shift+Mod+Key)
-        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#000000' -nf '#875fff' -sb '#875fff' -sf '#000000' -p 'CMD:'")
+        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#2d2d2d' -nf '#875fff' -sb '#875fff' -sf '#2d2d2d' -p 'CMD:'")
 
     -- Screenbrightness
     	
@@ -214,7 +214,7 @@ xmobarEscape = concatMap doubleLts
         
 myWorkspaces :: [String]   
 myWorkspaces = clickable . (map xmobarEscape) 
-               $ ["dev", "code", "hack", "doc", "git", "www", "net", "gfx", "irc"]
+               $ ["0x01", "0x02", "0x03", "0x04", "0x05", "0x06", "0x07", "0x08", "0x09"]
   where                                                                      
         clickable l = [ "<action=xdotool key super+" ++ show (n) ++ ">" ++ ws ++ "</action>" |
                       (i,ws) <- zip [1..9] l,                                        
@@ -222,13 +222,14 @@ myWorkspaces = clickable . (map xmobarEscape)
 myManageHook :: Query (Data.Monoid.Endo WindowSet)
 myManageHook = composeAll
      [
-        className =? "Firefox"     --> doShift "<action=xdotool key super+2>www</action>"
-      , title =? "Vivaldi"         --> doShift "<action=xdotool key super+2>www</action>"
-      , title =? "irssi"           --> doShift "<action=xdotool key super+6>irc</action>"
+        className =? "Firefox"     --> doShift "<action=xdotool key super+1>www</action>"
+      , title =? "Vivaldi"         --> doShift "<action=xdotool key super+1>www</action>"
+      , title =? "irssi"           --> doShift "<action=xdotool key super+9>irc</action>"
       , className =? "cmus"        --> doShift "<action=xdotool key super+7>www</action>"
       , className =? "vlc"         --> doShift "<action=xdotool key super+7>www</action>"
       , className =? "Virtualbox"  --> doFloat
       , className =? "Gimp"        --> doFloat
+      , className =? "Arduino"     --> doFloat
       , className =? "Gimp"        --> doShift "<action=xdotool key super+8>www</action>"
       , (className =? "Firefox" <&&> resource =? "Dialog") --> doFloat  -- Float Firefox Dialog
     ] <+> namedScratchpadManageHook myScratchPads
