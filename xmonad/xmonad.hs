@@ -1,5 +1,3 @@
---XMONAD CONFIG
---BASED ON THE XMONAD.HS FROM DEREK TAYLOR / DISTROTUBE (https://www.gitlab.com/dwt1)
 ------------------------------------------------------------------------
 ---IMPORTS
 ------------------------------------------------------------------------
@@ -22,7 +20,7 @@ import XMonad.Util.Run (safeSpawn, unsafeSpawn, runInTerm, spawnPipe)
 import XMonad.Util.SpawnOnce
 
     -- Hooks
-import XMonad.Hooks.DynamicLog (dynamicLogWithPP, defaultPP, wrap, pad, xmobarPP, xmobarColor, shorten, PP(..))
+import XMonad.Hooks.DynamicLog (dynamicLogWithPP, wrap, pad, xmobarPP, xmobarColor, shorten, PP(..))
 import XMonad.Hooks.ManageDocks (avoidStruts, docksStartupHook, manageDocks, ToggleStruts(..))
 import XMonad.Hooks.ManageHelpers (isFullscreen, isDialog,  doFullFloat, doCenterFloat) 
 import XMonad.Hooks.Place (placeHook, withGaps, smart)
@@ -65,7 +63,7 @@ import XMonad.Layout.ZoomRow (zoomRow, zoomIn, zoomOut, zoomReset, ZoomMessage(Z
 import XMonad.Layout.IM (withIM, Property(Role))
 
     -- Prompts
-import XMonad.Prompt (defaultXPConfig, XPConfig(..), XPPosition(Top), Direction1D(..))
+import XMonad.Prompt (XPConfig(..), XPPosition(Top), Direction1D(..))
 
 ------------------------------------------------------------------------
 ---CONFIG
@@ -79,7 +77,7 @@ windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.works
 
 main = do
     -- Launching XMobar with config
-    xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobarrc0"
+    xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/.xmobarrc"
     --xmproc1 <- spawnPipe "xmobar -x 1" -- For XMobar on other Displays in Multi-Monitor Setup
     --xmproc2 <- spawnPipe "xmobar -x 2" -- 
 
@@ -112,9 +110,7 @@ main = do
 ------------------------------------------------------------------------
 myStartupHook = do 
           spawnOnce "nitrogen --restore &" 
-          spawnOnce "compton --config /home/pho/.config/compton/compton.conf &" 
-          setWMName "compton"
-
+          spawnOnce "xmobar -x 0 ~/.config/.xmobarrc"  
 ------------------------------------------------------------------------
 --- SET KEYS - TO FIND KEYI DENTIFIERS: XEV 
 ------------------------------------------------------------------------
@@ -193,6 +189,9 @@ myKeys =
         
     -- Open Terminal (Mod+Enter)
         , ("M-<Return>", spawn myTerminal) 
+
+    --- Firefox
+        , ("M-f", spawn "firefox")
 		
     --- Dmenu (Shift+Mod+Key)
         , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#2d2d2d' -nf '#875fff' -sb '#875fff' -sf '#2d2d2d' -p 'CMD:'")
