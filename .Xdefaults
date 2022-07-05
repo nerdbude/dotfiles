@@ -1,44 +1,51 @@
 ## [COLORSCHEME]
-## [IWTB_DARK] 
+## [EVA-01]
 ## [ORIGINAL: https://www.github.com/nerdbude/]
 
+#define base00 #2d2d2d
+#define base01 #b8a0ff
+#define base02 #875fff
+#define base03 #abf516
+#define base04 #ff00b7
+#define base05 #ff1f4f
+#define base06 #fffc52
+#define base07 #63ffff
 
-# special
-*.foreground: #d7d7d7
-*.background: #000000
-*.cursorColor: #d7d7d7
+#define base08 #2d2d2d
+#define base09 #4d4d4d
+#define base0A #8391f7
+#define base0B #88aa44
+#define base0C #b2007f
+#define base0D #ff1f4f
+#define base0E #d2cf1b
+#define base0F #53d6d6
 
-# black and gray
-*.color0: #000000
-*.color8: #8a8a8a
+*foreground:   base01
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base02
 
-# red
-*.color1: #ff5f5f
-*.color9: #ff5f87
+*color0:       base00
+*color1:       base01
+*color2:       base03
+*color3:       base07
+*color4:       base04
+*color5:       base02
+*color6:       base05
+*color7:       base01
 
-# green
-*.color2: #5fd75f
-*.color10: #afd75f
+*color8:       base08
+*color9:       base0D
+*color10:      base04
+*color11:      base0E
+*color12:      base06
+*color13:      base02
+*color14:      base0F
+*color15:      base09
 
-# yellow
-*.color3: #afaf00
-*.color11: #ffff5f
-
-# blue
-*.color4: #8787ff
-*.color12: #87afd7
-
-# magenta
-*.color5: #875faf
-*.color13: #875fff
-
-# cyan
-*.color6: #00d7d7
-*.color14: #00ffd7
-
-# white
-*.color7: #8a8a8a
-*.color15: #bcbcbc
 
 
 ##[URXVT CONFIG]
@@ -47,11 +54,11 @@
 #Disable Scrollbar
 URxvt*scrollBar: false
 
-#Remember 100000 Lines 
+#Remember 100000 Lines
 URxvt.savelines: 100000
 
 #Cursor blink
 URxvt.cursorBlink: true
 
 #Font
-URxvt.font: xft:Hack:style=Regular:pixelsize=10
+URxvt.font: xft:Share Tech Mono:style=Regular:pixelsize=11
