@@ -1,8 +1,6 @@
 ------------------------------------------------------------------------
 ---IMPORTS
 ------------------------------------------------------------------------
-
-
     -- Base
 import XMonad
 import XMonad.Config.Desktop
@@ -68,7 +66,7 @@ import XMonad.Prompt (XPConfig(..), XPPosition(Top), Direction1D(..))
 ------------------------------------------------------------------------
 ---CONFIG
 ------------------------------------------------------------------------
-myFont          = "xft:Share Tech Mono:style=Regular:pixelsize=10"
+myFont          = "xft:ShureTechMono Nerd Font:style=Regular:pixelsize=9"
 myModMask       = mod4Mask  -- Sets modkey to super/windows key
 myTerminal      = "urxvt"   -- Default terminal (urxvt)
 myTextEditor    = "vim"     -- Default text editor (vim)
@@ -77,7 +75,7 @@ windowCount     = gets $ Just . show . length . W.integrate' . W.stack . W.works
 
 main = do
     -- Launching XMobar with config
-    xmproc0 <- spawnPipe "xmobar -x 0 ~/.config/.xmobarrc"
+    xmproc0 <- spawnPipe "xmobar -x 0"
     --xmproc1 <- spawnPipe "xmobar -x 1" -- For XMobar on other Displays in Multi-Monitor Setup
     --xmproc2 <- spawnPipe "xmobar -x 2" -- 
 
@@ -85,13 +83,13 @@ main = do
         { manageHook = ( isFullscreen --> doFullFloat ) <+> myManageHook <+> manageHook desktopConfig <+> manageDocks
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = \x -> hPutStrLn xmproc0 x -- >> hPutStrLn xmproc1 x  >> hPutStrLn xmproc2 x
-                        , ppCurrent = xmobarColor "#df20bb" "" . wrap "[" "]" -- Current workspace in xmobar
-                        , ppVisible = xmobarColor "#875fff" ""                -- Visible but not current workspace
-                        , ppHidden = xmobarColor "#875fff" "" . wrap "*" ""   -- Hidden workspaces in xmobar
-                        , ppHiddenNoWindows = xmobarColor "#875fff" ""        -- Hidden workspaces (no windows)
-                        , ppTitle = xmobarColor "#875fff" "" . shorten 80     -- Title of active window in xmobar
-                        , ppSep =  "<fc=#8bd450> >> </fc>"                     -- Separators
-                        , ppUrgent = xmobarColor "#000000" "" . wrap "!" "!"  -- Urgent workspace
+                        , ppCurrent = xmobarColor "#ff0087" "" . wrap "[" "]" -- Current workspace in xmobar
+                        , ppVisible = xmobarColor "#0087ff" ""                -- Visible but not current workspace
+                        , ppHidden = xmobarColor "#0087ff" "" . wrap "" ""   -- Hidden workspaces in xmobar
+                        , ppHiddenNoWindows = xmobarColor "#1c1c1c" ""        -- Hidden workspaces (no windows)
+                        , ppTitle = xmobarColor "#d700ff" "" . shorten 80     -- Title of active window in xmobar
+                        , ppSep =  "<fc=#5fffd7> >> </fc>"                     -- Separators
+                        , ppUrgent = xmobarColor "#1c1c1c" "" . wrap "!" "!"  -- Urgent workspace
                         , ppExtras  = [windowCount]                           -- # of windows current workspace
                         , ppOrder  = \(ws:l:t:ex) -> [ws,l]++ex++[t]
                         }
@@ -101,8 +99,8 @@ main = do
         , layoutHook         = myLayoutHook 
         , workspaces         = myWorkspaces
         , borderWidth        = myBorderWidth
-        , normalBorderColor  = "#2d2d2d"
-        , focusedBorderColor = "#875fff"
+        , normalBorderColor  = "#1c1c1c"
+        , focusedBorderColor = "#d700ff"
         } `additionalKeysP`         myKeys 
 
 ------------------------------------------------------------------------
@@ -110,7 +108,7 @@ main = do
 ------------------------------------------------------------------------
 myStartupHook = do 
           spawnOnce "nitrogen --restore &" 
-          spawnOnce "xmobar -x 0 ~/.config/.xmobarrc"  
+          spawnOnce "xmobar -x 0"  
 ------------------------------------------------------------------------
 --- SET KEYS - TO FIND KEYI DENTIFIERS: XEV 
 ------------------------------------------------------------------------
@@ -194,7 +192,7 @@ myKeys =
         , ("M-f", spawn "firefox")
 		
     --- Dmenu (Shift+Mod+Key)
-        , ("M-S-<Return>", spawn "dmenu_run -fn 'Hack-Regular:size=8' -nb '#2d2d2d' -nf '#875fff' -sb '#875fff' -sf '#2d2d2d' -p 'CMD:'")
+        , ("M-S-<Return>", spawn "dmenu_run -fn 'Share Tech Mono:size=8' -nb '#080808' -nf '#d700ff' -sb '#d700ff' -sf '#080808' -p 'CMD:'")
 
     -- Screenbrightness
     	
