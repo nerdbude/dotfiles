@@ -72,7 +72,7 @@
   # FONTS
   fonts.fonts = with pkgs; [
 	(nerdfonts.override { fonts = [ "FiraCode" "ShareTechMono" ]; })
-
+    
         ibm-plex
         google-fonts
         noto-fonts
@@ -84,18 +84,23 @@
     
 # Editor
     vim
-    
 # Terminal tools
+    nmap
+    tldr
     vimb
+    borgbackup
+    gh
     git
     wget
     neofetch
+    goaccess
     acpi
     xbrightness
     xorg.xrandr
     xcompmgr
     toot
     vifm
+    networkmanager
     unzip
     img2pdf
     lynx
@@ -104,8 +109,14 @@
     sxiv
     toilet
     figlet
-    tut
+    sc-im
+    cmatrix
+    p7zip
+    gomuks
+    zsh-git-prompt
 # Tools
+    baobab
+    drawio
     firefox
     thunderbird
     nitrogen  
@@ -116,13 +127,18 @@
     dmenu
     libreoffice
     qcad
-    discord   
+    discord
+    rofi
+    inkscape
 # Terminal
     zsh
     rxvt_unicode
     oh-my-zsh
     nerdfonts
-    
+# Languages
+    python310
+#   VNC TEST 
+    tigervnc   
 # Haskell Packages
     haskellPackages.libmpd
     haskellPackages.xmobar
