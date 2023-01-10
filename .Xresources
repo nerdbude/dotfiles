@@ -6,7 +6,7 @@ URxvt.depth:                    32  1
 #TRANSPARANCY
 #URxvt*transparent: 		true
 #URxvt*shading: 			20
-#URxvt*tintcolor:		#080808
+#URxvt*tintcolor:		#1c1c1c
 #URxvt*blurRadius:		5
 
 URxvt.letterSpace:              1
@@ -20,7 +20,7 @@ URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
 URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
 URxvt.clipboard.autocopy:       true
 
-#define base00 #080808
+#define base00 #262626
 #define base01 #ff005f
 #define base02 #afd75f
 #define base03 #ffff5f
@@ -40,9 +40,9 @@ URxvt.clipboard.autocopy:       true
 
 *foreground:   base07
 #ifdef background_opacity
-*background:   [100]base08
+*background:   [100]base00
 #else
-*background:   base08
+*background:   base00
 #endif
 *cursorColor:  base07
 
