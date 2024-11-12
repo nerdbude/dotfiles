@@ -1,7 +1,6 @@
 <h1 align="center">[ $METACORTEX ]</h1>
 <p align="center">The configuration files for my systems.</p>
-![Static Badge](https://img.shields.io/badge/NixOS-badge?style=flat-square&logo=nixos&logoColor=%23ffffff&logoSize=auto&labelColor=7ebae4&color=7ebae4&link=https%3A%2F%2Fnixos.org)
-
+<img alt="Static Badge" src="https://img.shields.io/badge/NixOS-badge?style=flat-square&logo=nixos&logoColor=%23ffffff&logoSize=auto&labelColor=7ebae4&color=7ebae4&link=https%3A%2F%2Fnixos.org">
 
 There are some devices in my "Metacortex". All of them running NixOS (latest stable release) and use the Dracula Colors. I use a ThinkPad T470 (MC-IF-00) as my daily driver to manage all the Servers and do other stuff. The MC-IF-02 is a ThinkCentre that is my local server for git, keyboard-firmwares and other code. 
 
