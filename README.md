@@ -14,7 +14,7 @@
 
 | NAME | DEVICE | CONFIG |
 |------|--------|--------|
-| MC-IF-00|ThinkPad T470 | Xmonad |
+| MC-IF-00|ThinkPad T470 | - XMonad - TEst |
 
 
 MC-IF-00 - ThinkPad T470
