@@ -12,6 +12,48 @@
 ### SYSTEMS:
 #### LOCAL:
 
+<table>
+    <tbody>
+        <tr>
+            <th>NAME</th>
+            <th>DEVICE</th>
+            <th>CONFIG</th>
+        </tr>
+        <tr>
+            <td>MC-IF-00</td>
+            <td>ThinkPad T470</td>
+            <td><ul>
+                    <li>OS: NixOS (latest stable)</li>
+                    <li>WM: XMonad + xmobar</li>
+                    <li>THEME: Dracula</li>
+                    <li>SHELL: ZSH (w/ Oh-My-ZSH)</li>
+                    <li>TERM: alacritty</li>
+                    <li></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>MC-IF-02</td>
+            <td>ThinkCentre</td>
+            <td>CONFIG</td>
+        </tr>
+</tbody>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 | NAME | DEVICE | CONFIG |
 |------|--------|--------|
 | MC-IF-00|ThinkPad T470 | - XMonad - TEst |
