@@ -16,62 +16,42 @@
     <tbody>
         <tr>
             <th>NAME</th>
+            <th>CODENAME</th>
             <th>DEVICE</th>
             <th>CONFIG</th>
         </tr>
         <tr>
             <td>MC-IF-00</td>
+            <td>Frohike</td>
             <td>ThinkPad T470</td>
             <td><ul>
-                    <li>OS: NixOS (latest stable)</li>
-                    <li>WM: XMonad + xmobar</li>
-                    <li>THEME: Dracula</li>
-                    <li>SHELL: ZSH (w/ Oh-My-ZSH)</li>
-                    <li>TERM: alacritty</li>
+                    <li>[OS]: NixOS (latest stable)</li>
+                    <li>[WM]: XMonad + xmobar</li>
+                    <li>[TH]: Dracula</li>
+                    <li>[SH]: ZSH (w/ Oh-My-ZSH)</li>
+                    <li>[TM]: alacritty</li>
                     <li></li>
                 </ul>
             </td>
         </tr>
         <tr>
             <td>MC-IF-02</td>
+            <td>Skinner</td>
             <td>ThinkCentre</td>
-            <td>CONFIG</td>
+            <td><ul>
+                    <li>[OS]: NixOS (latest stable)</li>
+                    <li>[WM]: headless</li>
+                    <li>[TH]: Dracula</li>
+                    <li>[SH]: ZSH (w/ Oh-My-ZSH)</li>
+                    <li>[TM]: alacritty</li>
+                    <li></li>
+                </ul>
+            </td>
         </tr>
-</tbody>
-
+    </tbody>
 </table>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-| NAME | DEVICE | CONFIG |
-|------|--------|--------|
-| MC-IF-00|ThinkPad T470 | - XMonad - TEst |
-
-
-MC-IF-00 - ThinkPad T470
-    - [OS]: NixOS (latest stable)
-    - [WM]: XMonad 
-    - [THEME]: Dracula
-    - [SHELL]: ZSH (w. Oh-My-ZSH)
-    - [TERM]: Alacritty
-
-[MC-IF-02] - Dev-Server
-    - [OS]: NixOS (latest stable)
-    - [WM]: headless  
-    - [THEME]: Dracula
-    - [SHELL]: ZSH (w. Oh-My-ZSH)
-    - [TERM]: Alacritty
 
 #### SERVER:
 [MC-EX-00] - Webserver
