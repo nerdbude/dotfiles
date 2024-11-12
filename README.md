@@ -8,8 +8,6 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/NeoVim-badge?style=flat-square&logo=neovim&logoColor=%23ffffff&logoSize=auto&labelColor=FFB86C&color=FFB86C&link=https%3A%2F%2Fxmonad.org%2F">
 </p>
 
-There are some devices in my "Metacortex". All of them running NixOS (latest stable release) and use the Dracula Colors. I use a ThinkPad T470 (MC-IF-00) as my daily driver to manage all the Servers and do other stuff. The MC-IF-02 is a ThinkCentre that is my local server for git, keyboard-firmwares and other code. 
-
 <p align="center">
   <img src="/img/screenshot01.png" width="600" />
 </p>
@@ -17,7 +15,6 @@ There are some devices in my "Metacortex". All of them running NixOS (latest sta
 <p align="center">
   <img src="/img/screenshot02.png" width="600" />
 </p>
-
 ### SYSTEMS:
 #### LOCAL:
 
