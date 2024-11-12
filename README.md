@@ -1,5 +1,7 @@
-<h1 align="center">[ $DOTFILES ]</h1>
+<h1 align="center">[ $METACORTEX ]</h1>
 <p align="center">The configuration files for my systems.</p>
+
+There are some devices in my "Metacortex". I use a ThinkPad T470 (MC-IF-00) as my daily driver to manage all the Servers and do other stuff. The MC-IF-02 is a ThinkCentre that is my local server for git, keyboard-firmwares and other code. 
 
 <p align="center">
   <img src="/img/screenshot01.png" width="600" />
