@@ -1,0 +1,40 @@
+#dynamic_title = true
+live_config_reload = true
+
+import = ["/home/pho/.config/alacritty/dracula.toml"]
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 7.0
+
+[font.bold]
+family = "Berkeley Mono Nerd Font"
+
+[font.bold_italic]
+family = "Berkeley Mono Nerd Font"
+
+[font.italic]
+family = "Berkeley Mono Nerd Font"
+
+[font.normal]
+family = "Berkeley Mono Nerd Font"
+
+[font.offset]
+x = 1
+y = 1
+
+[scrolling]
+history = 5000
+
+[window]
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.padding]
+x = 6
+y = 6

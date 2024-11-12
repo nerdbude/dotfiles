@@ -1,0 +1,728 @@
+# Configuration file for tut
+
+[general]
+editor="TUT_USE_INTERNAL"
+confirmation=true
+mouse-support=false
+date-format="2006-01-02 15:04"
+date-tody-format="15:04"
+date-relative=-1
+max-width=0
+list-placement="left"
+list-split="row"
+list-proportion=1
+content-proportion=2
+notifications-to-hide=[]
+quote-reply=false
+show-icons=true
+short-hints=false
+show-filter-phrase=true
+show-help=true
+stick-to-top=false
+show-boosted-user=false
+commands-in-new-pane=true
+dynamic-timeline-name=true
+terminal-title=0
+redraw-ui=true
+leader-key=""
+leader-timeout=1000
+
+[media]
+delete-temp-files=true
+
+[media.image]
+program="sxiv"
+args=""
+terminal=true
+single=true
+reverse=false
+
+[media.video]
+program="TUT_OS_DEFAULT"
+args=""
+terminal=false
+single=true
+reverse=false
+
+[media.audio]
+program="TUT_OS_DEFAULT"
+args=""
+terminal=false
+single=true
+reverse=false
+
+[media.link]
+program="qutebrowser"
+args=""
+terminal=false
+
+[desktop-notification]
+followers=false
+favorite=false
+mention=false
+update=false
+boost=false
+poll=false
+posts=false
+
+[open-custom]
+
+[open-pattern]
+
+[style]
+theme="draculatut"
+xrdb-prefix="guess"
+background=""
+text=""
+subtle=""
+warning-text=""
+text-special-one=""
+text-special-two=""
+top-bar-background=""
+top-bar-text=""
+status-bar-background=""
+status-bar-text=""
+status-bar-view-background=""
+status-bar-view-text=""
+command-text=""
+list-selected-background=""
+list-selected-text=""
+list-selected-inactive-background=""
+list-selected-inactive-text=""
+controls-text=""
+controls-highlight=""
+autocomplete-background=""
+autocomplete-text=""
+autocomplete-selected-background=""
+autocomplete-selected-text=""
+button-color-one=""
+button-color-two=""
+timeline-name-background=""
+timeline-name-text=""
+
+[input]
+[input.global-down]
+keys=["j","J"]
+special-keys=["Down"]
+[input.global-up]
+keys=["k","K"]
+special-keys=["Up"]
+[input.global-enter]
+special-keys=["Enter"]
+[input.global-back]
+hint="[Esc]"
+special-keys=["Esc"]
+[input.global-exit]
+hint="[Q]uit"
+keys=["q","Q"]
+[input.main-home]
+keys=["g"]
+special-keys=["Home"]
+[input.main-end]
+keys=["G"]
+special-keys=["End"]
+[input.main-prev-feed]
+keys=["h","H"]
+special-keys=["Left"]
+[input.main-next-feed]
+keys=["l","L"]
+
+# default=["Right"]
+special-keys=["Right"]
+
+[input.main-prev-pane]
+# Focus on the previous feed pane
+
+# default=["Backtab"]
+special-keys=["Backtab"]
+
+[input.main-next-pane]
+# Focus on the next feed pane
+
+# default=["Tab"]
+special-keys=["Tab"]
+
+[input.main-next-account]
+# Focus on the next account
+
+# default=["Ctrl-N"]
+special-keys=["Ctrl-N"]
+
+[input.main-prev-account]
+# Focus on the previous account
+
+# default=["Ctrl-P"]
+special-keys=["Ctrl-P"]
+
+[input.main-compose]
+# Compose a new toot
+
+# default=["c", "C"]
+keys=["c","C"]
+
+[input.status-avatar]
+# Open avatar
+
+# default="[A]vatar"
+hint="[A]vatar"
+
+# default=["a", "A"]
+keys=["a","A"]
+
+[input.status-boost]
+# Boost a toot
+
+# default="[B]oost"
+hint="[B]oost"
+
+# default=["b", "B"]
+keys=["b","B"]
+
+[input.status-edit]
+# Edit a toot
+
+# default="[E]dit"
+hint="[E]dit"
+
+# default=["e", "E"]
+keys=["e","E"]
+
+[input.status-delete]
+# Delete a toot
+
+# default="[D]elete"
+hint="[D]elete"
+
+# default=["d", "D"]
+keys=["d","D"]
+
+[input.status-favorite]
+# Favorite a toot
+
+# default="[F]avorite"
+hint="[F]avorite"
+
+# default=["f", "F"]
+keys=["f","F"]
+
+[input.status-media]
+# Open toots media files
+
+# default="[M]edia"
+hint="[M]edia"
+
+# default=["m", "M"]
+keys=["m","M"]
+
+[input.status-links]
+# Open links
+
+# default="[O]pen"
+hint="[O]pen"
+
+# default=["o", "O"]
+keys=["o","O"]
+
+[input.status-poll]
+# Open poll
+
+# default="[P]oll"
+hint="[P]oll"
+
+# default=["p", "P"]
+keys=["p","P"]
+
+[input.status-reply]
+# Reply to toot
+
+# default="[R]eply"
+hint="[R]eply"
+
+# default=["r", "R"]
+keys=["r","R"]
+
+[input.status-bookmark]
+# Save/bookmark a toot
+
+# default="[S]ave"
+hint="[S]ave"
+
+# default="Un[S]ave"
+hint-alt="Un[S]ave"
+
+# default=["s", "S"]
+keys=["s","S"]
+
+[input.status-thread]
+# View thread
+
+# default="[T]hread"
+hint="[T]hread"
+
+# default=["t", "T"]
+keys=["t","T"]
+
+[input.status-user]
+# Open user profile
+
+# default="[U]ser"
+hint="[U]ser"
+
+# default=["u", "U"]
+keys=["u","U"]
+
+[input.status-view-focus]
+# Open the view mode
+
+# default="[V]iew"
+hint="[V]iew"
+
+# default=["v", "V"]
+keys=["v","V"]
+
+[input.status-yank]
+# Yank the url of the toot
+
+# default="[Y]ank"
+hint="[Y]ank"
+
+# default=["y", "Y"]
+keys=["y","Y"]
+
+[input.status-toggle-cw]
+# Show the content in a content warning
+
+# default="Press [Z] to toggle cw"
+hint="Press [Z] to toggle cw"
+
+# default=["z", "Z"]
+keys=["z","Z"]
+
+[input.status-show-filtered]
+# Show the content of a filtered toot
+
+# default="Press [Z] to view filtered toot"
+hint="Press [Z] to view filtered toot"
+
+# default=["z", "Z"]
+keys=["z","Z"]
+
+[input.user-avatar]
+# View avatar
+
+# default="[A]vatar"
+hint="[A]vatar"
+
+# default=["a", "A"]
+keys=["a","A"]
+
+[input.user-block]
+# Block the user
+
+# default="[B]lock"
+hint="[B]lock"
+
+# default="Un[B]lock"
+hint-alt="Un[B]lock"
+
+# default=["b", "B"]
+keys=["b","B"]
+
+[input.user-follow]
+# Follow user
+
+# default="[F]ollow"
+hint="[F]ollow"
+
+# default="Un[F]ollow"
+hint-alt="Un[F]ollow"
+
+# default=["f", "F"]
+keys=["f","F"]
+
+[input.user-follow-request-decide]
+# Follow user
+
+# default="Follow [R]equest"
+hint="Follow [R]equest"
+
+# default="Follow [R]equest"
+hint-alt="Follow [R]equest"
+
+# default=["r", "R"]
+keys=["r","R"]
+
+[input.user-mute]
+# Mute user
+
+# default="[M]ute"
+hint="[M]ute"
+
+# default="Un[M]ute"
+hint-alt="Un[M]ute"
+
+# default=["m", "M"]
+keys=["m","M"]
+
+[input.user-links]
+# Open links
+
+# default="[O]pen"
+hint="[O]pen"
+
+# default=["o", "O"]
+keys=["o","O"]
+
+[input.user-user]
+# View user profile
+
+# default="[U]ser"
+hint="[U]ser"
+
+# default=["u", "U"]
+keys=["u","U"]
+
+[input.user-view-focus]
+# Open view mode
+
+# default="[V]iew"
+hint="[V]iew"
+
+# default=["v", "V"]
+keys=["v","V"]
+
+[input.user-yank]
+# Yank the user URL
+
+# default="[Y]ank"
+hint="[Y]ank"
+
+# default=["y", "Y"]
+keys=["y","Y"]
+
+[input.list-open-feed]
+# Open list
+
+# default="[O]pen"
+hint="[O]pen"
+
+# default=["o", "O"]
+keys=["o","O"]
+
+[input.list-user-list]
+# List all users in a list
+
+# default="[U]sers"
+hint="[U]sers"
+
+# default=["u", "U"]
+keys=["u","U"]
+
+[input.list-user-add]
+# Add user to list
+
+# default="[A]dd"
+hint="[A]dd"
+
+# default=["a", "A"]
+keys=["a","A"]
+
+[input.list-user-delete]
+# Delete user from list
+
+# default="[D]elete"
+hint="[D]elete"
+
+# default=["d", "D"]
+keys=["d","D"]
+
+[input.link-open]
+# Open URL
+
+# default="[O]pen"
+hint="[O]pen"
+
+# default=["o", "O"]
+keys=["o","O"]
+
+[input.link-yank]
+# Yank the URL
+
+# default="[Y]ank"
+hint="[Y]ank"
+
+# default=["y", "Y"]
+keys=["y","Y"]
+
+[input.tag-open-feed]
+# Open tag feed
+
+# default="[O]pen"
+hint="[O]pen"
+
+# default=["o", "O"]
+keys=["o","O"]
+
+[input.tag-follow]
+# Toggle follow on tag
+
+# default="[F]ollow"
+hint="[F]ollow"
+
+# default="Un[F]ollow"
+hint-alt="Un[F]ollow"
+
+# default=["f", "F"]
+keys=["f","F"]
+
+[input.compose-edit-cw]
+# Edit content warning text on new toot
+
+# default="[C]W text"
+hint="[C]W text"
+
+# default=["c", "C"]
+keys=["c","C"]
+
+[input.compose-edit-text]
+# Edit the text on new toot
+
+# default="[E]dit text"
+hint="[E]dit text"
+
+# default=["e", "E"]
+keys=["e","E"]
+
+[input.compose-include-quote]
+# Include a quote when replying
+
+# default="[I]nclude quote"
+hint="[I]nclude quote"
+
+# default=["i", "I"]
+keys=["i","I"]
+
+[input.compose-media-focus]
+# Focus on adding media to toot
+
+# default="[M]edia"
+hint="[M]edia"
+
+# default=["m", "M"]
+keys=["m","M"]
+
+[input.compose-post]
+# Post the new toot
+
+# default="[P]ost"
+hint="[P]ost"
+
+# default=["p", "P"]
+keys=["p","P"]
+
+[input.compose-toggle-content-warning]
+# Toggle content warning on toot
+
+# default="[T]oggle CW"
+hint="[T]oggle CW"
+
+# default=["t", "T"]
+keys=["t","T"]
+
+[input.compose-visibility]
+# Edit the visibility on new toot
+
+# default="[V]isibility"
+hint="[V]isibility"
+
+# default=["v", "V"]
+keys=["v","V"]
+
+[input.compose-language]
+# Edit the language of a toot
+
+# default="[L]ang"
+hint="[L]ang"
+
+# default=["l", "L"]
+keys=["l","L"]
+
+[input.compose-poll]
+# Switch to creating a poll
+
+# default="P[O]ll"
+hint="P[O]ll"
+
+# default=["o", "O"]
+keys=["o","O"]
+
+[input.media-delete]
+# Delete media file
+
+# default="[D]elete"
+hint="[D]elete"
+
+# default=["d", "D"]
+keys=["d","D"]
+
+[input.media-edit-desc]
+# Edit the description on media file
+
+# default="[E]dit desc"
+hint="[E]dit desc"
+
+# default=["e", "E"]
+keys=["e","E"]
+
+[input.media-add]
+# Add a new media file
+
+# default="[A]dd"
+hint="[A]dd"
+
+# default=["a", "A"]
+keys=["a","A"]
+
+[input.vote-vote]
+# Vote on poll
+
+# default="[V]ote"
+hint="[V]ote"
+
+# default=["v", "V"]
+keys=["v","V"]
+
+[input.vote-select]
+# Select item to vote on
+
+# default="[Enter] to select"
+hint="[Enter] to select"
+
+# default=["Enter"]
+special-keys=["Enter"]
+
+[input.poll-add]
+# Add a new poll option
+
+# default="[A]dd"
+hint="[A]dd"
+
+# default=["a", "A"]
+keys=["a","A"]
+
+[input.poll-edit]
+# Edit a poll option
+
+# default="[E]dit"
+hint="[E]dit"
+
+# default=["e", "E"]
+keys=["e","E"]
+
+[input.poll-delete]
+# Delete a poll option
+
+# default="[D]elete"
+hint="[D]elete"
+
+# default=["d", "D"]
+keys=["d","D"]
+
+[input.poll-multi-toggle]
+# Toggle voting on multiple options
+
+# default="Toggle [M]ultiple"
+hint="Toggle [M]ultiple"
+
+# default=["m", "M"]
+keys=["m","M"]
+
+[input.poll-expiration]
+# Change the expiration of poll
+
+# default="E[X]pires"
+hint="E[X]pires"
+
+# default=["x", "X"]
+keys=["x","X"]
+
+[input.preference-name]
+# Change display name
+
+# default="[N]ame"
+hint="[N]ame"
+
+# default=["n", "N"]
+keys=["n","N"]
+
+[input.preference-visibility]
+# Change default visibility of toots
+
+# default="[V]isibility"
+hint="[V]isibility"
+
+# default=["v", "V"]
+keys=["v","V"]
+
+[input.preference-bio]
+# Change bio in profile
+
+# default="[B]io"
+hint="[B]io"
+
+# default=["b", "B"]
+keys=["b","B"]
+
+[input.preference-save]
+# Save your preferences
+
+# default="[S]ave"
+hint="[S]ave"
+
+# default=["s", "S"]
+keys=["s","S"]
+
+[input.preference-fields]
+# Edit profile fields
+
+# default="[F]ields"
+hint="[F]ields"
+
+# default=["f", "F"]
+keys=["f","F"]
+
+[input.preference-fields-add]
+# Add new field
+
+# default="[A]dd"
+hint="[A]dd"
+
+# default=["a", "A"]
+keys=["a","A"]
+
+[input.preference-fields-edit]
+# Edit current field
+
+# default="[E]dit"
+hint="[E]dit"
+
+# default=["e", "E"]
+keys=["e","E"]
+
+[input.preference-fields-delete]
+# Delete current field
+
+# default="[D]elete"
+hint="[D]elete"
+
+# default=["d", "D"]
+keys=["d","D"]
+
+[input.editor-exit]
+# Exit the editor
+
+# default="[Esc] when done"
+hint="[Esc] when done"
+
+# default=["Esc"]
+special-keys=["Esc"]

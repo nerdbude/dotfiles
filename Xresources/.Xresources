@@ -1,0 +1,44 @@
+Xft.dpi:                        109
+#define base00 #44475A  
+#define base01 #FF5555  
+#define base02 #50FA7B
+#define base03 #F1FA8C	
+#define base04 #BD93F9	
+#define base05 #FF79C6	
+#define base06 #8BE9FD	
+#define base07 #F8F8F2	
+
+#define base08 #6272A4	
+#define base09 #FF6E6E	
+#define base0A #69FF94	
+#define base0B #FFFFA5	
+#define base0C #D6ACFF	
+#define base0D #FF92DF	
+#define base0E #A4FFFF	
+#define base0F #FFFFFF	
+
+*foreground:   base03
+#ifdef background_opacity
+*background:   [100]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base03
+
+*color0:       base00
+*color1:       base01
+*color2:       base02
+*color3:       base03
+*color4:       base04
+*color5:       base05
+*color6:       base06
+*color7:       base07
+
+*color8:       base08
+*color9:       base09
+*color10:      base0A
+*color11:      base0B
+*color12:      base0C
+*color13:      base0D
+*color14:      base0E
+*color15:      base0F

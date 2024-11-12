@@ -1,0 +1,32 @@
+-- XMobar config
+Config { font    = "Berkeley Mono Nerd Font 8"
+       , additionalFonts = [ "xft:BerkeleyMono Nerd Font:pixelsize=9" ]
+       , bgColor = "#44475A"
+       , fgColor = "#F8F8F2"
+       , position = Static { xpos = 0 , ypos = 0 , width = 1366 , height = 18 }
+--       , position = Top
+       , lowerOnStart = True
+       , hideOnStart = False
+       , allDesktops = True
+       , persistent = True
+       , iconRoot = "/home/pho/.xmonad/xpm/"  -- default: "[KYB3R]"
+       , commands = [ Run Date "%H:%M:%S" "date" 10
+                    , Run DynNetwork [ "--template", " <tx> kB/s  <rx> kB/s"
+                                     , "--Low"     , "1000"    -- units: kB/s
+                                     , "--High"    , "5000"    -- units: kB/s
+                                     , "--low"     , "lightgreen"
+                                     , "--normal"  , "lightorange"
+                                     , "--high"    , "lightred"   
+                    ] 50
+                    , Run Cpu ["-t", "CPU::<total>","-H","50","--high","red"] 10
+                    , Run Memory ["-t", "MEM::<usedratio>"] 10
+                    , Run DiskU [("/", "HDD::<used>")] [] 3600
+                    , Run UnsafeStdinReader
+                    , Run Com "uname" ["-r"] "kernel" 36000
+                    , Run Com "nixos-version" ["-revision"] "nixos" 36000
+                    , Run Com "uname" ["-n"] "machine" 36000
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "<fc=#FF79C6> %machine% </fc> <fc=#50FA7B>::</fc> %UnsafeStdinReader% }{ <fc=#BD93F9>%nixos%</fc> <fc=#50FA7B>::</fc> <fc=#FF79C6>%kernel%</fc> <fc=#50FA7B>::</fc> %dynnetwork% <fc=#50FA7B>::</fc> <fc=#F1FA8C>%date%</fc> "
+       }
