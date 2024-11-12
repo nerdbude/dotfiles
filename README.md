@@ -5,6 +5,7 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/ZSH-badge?style=flat-square&logo=zsh&logoColor=%23ffffff&logoSize=auto&labelColor=50FA7B&color=50FA7B&link=https%3A%2F%2Fde.wikipedia.org%2Fwiki%2FZ_shell">
 <img alt="Static Badge" src="https://img.shields.io/badge/alacritty-badge?style=flat-square&logo=alacritty&logoColor=%23ffffff&logoSize=auto&labelColor=BD93F9&color=BD93F9&link=https%3A%2F%2Fgithub.com%2Falacritty%2Falacritty">
 <img alt="Static Badge" src="https://img.shields.io/badge/xmonad-badge?style=flat-square&logo=haskell&logoColor=%23ffffff&logoSize=auto&labelColor=FF79C6&color=FF79C6&link=https%3A%2F%2Fxmonad.org%2F">
+<img alt="Static Badge" src="https://img.shields.io/badge/NeoVim-badge?style=flat-square&logo=neovim&logoColor=%23ffffff&logoSize=auto&labelColor=FFB86C&color=FFB86C&link=https%3A%2F%2Fxmonad.org%2F">
 </p>
 
 There are some devices in my "Metacortex". All of them running NixOS (latest stable release) and use the Dracula Colors. I use a ThinkPad T470 (MC-IF-00) as my daily driver to manage all the Servers and do other stuff. The MC-IF-02 is a ThinkCentre that is my local server for git, keyboard-firmwares and other code. 
