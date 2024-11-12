@@ -11,7 +11,7 @@
 
 ### SYSTEMS:
 #### LOCAL:
-[MC-IF-00] - ThinkPad T470
+MC-IF-00 - ThinkPad T470
     - [OS]: NixOS (latest stable)
     - [WM]: XMonad 
     - [THEME]: Dracula
