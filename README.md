@@ -32,7 +32,6 @@ There are some devices in my "Metacortex". I use a ThinkPad T470 (MC-IF-00) as m
                     <li>[TH]: Dracula</li>
                     <li>[SH]: ZSH (w/ Oh-My-ZSH)</li>
                     <li>[TM]: alacritty</li>
-                    <li></li>
                 </ul>
             </td>
         </tr>
@@ -46,7 +45,6 @@ There are some devices in my "Metacortex". I use a ThinkPad T470 (MC-IF-00) as m
                     <li>[TH]: Dracula</li>
                     <li>[SH]: ZSH (w/ Oh-My-ZSH)</li>
                     <li>[TM]: alacritty</li>
-                    <li></li>
                 </ul>
             </td>
         </tr>
