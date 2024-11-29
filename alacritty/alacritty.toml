@@ -3,6 +3,10 @@ live_config_reload = true
 
 import = ["/home/pho/.config/alacritty/dracula.toml"]
 
+[cursor]
+style = "Underline"
+unfocused_hollow = false
+
 [env]
 TERM = "alacritty"
 
