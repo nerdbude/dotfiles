@@ -12,10 +12,6 @@
   <img src="/img/screenshot01.png" width="600" />
 </p>
 
-<p align="center">
-  <img src="/img/screenshot02.png" width="600" />
-</p>
-
 ### SYSTEMS:
 
 #### LOCAL:
